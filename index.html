@@ -42,8 +42,10 @@
   .brand-name{font-family:var(--serif);font-size:1.12rem;color:var(--ink-deep);line-height:1.2}
   .brand-name small{display:block;font-family:var(--sans);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-fg);font-weight:600}
   .nav-links{display:flex;gap:26px;align-items:center}
-  .nav-links a{color:var(--muted-fg);text-decoration:none;font-size:.9rem;font-weight:500}
-  .nav-links a:hover{color:var(--teal-deep)}
+  .nav-links a:not(.btn){color:var(--muted-fg);text-decoration:none;font-size:.9rem;font-weight:500}
+  .nav-links a.btn{color:#fff}
+  .nav-links a:not(.btn):hover{color:var(--teal-deep)}
+  .nav-links a.btn:hover{color:#fff}
   .nav-cta{padding:10px 18px;font-size:.87rem}
   @media(max-width:800px){.nav-links a:not(.nav-cta){display:none}}
 
